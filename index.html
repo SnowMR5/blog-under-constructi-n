@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Planet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="js/canvas.js" async></script>
+</head>
+<body>
+    <section class="container">
+        <div class="grill">
+            <img src="img/lion.png" alt="leon" class="leon">
+                <h1 class="text">Animal Planet MX</h1>
+                <i class="fas fa-bars" id="btn"></i>
+                <br>
+                <div class="bottom">
+                    <a href="#blogger" class="link"><i class="fas fa-cube"></i> Animal Blog</a><br>
+                    <a href="#hist" class="link"><i class="fas fa-paw"></i> Animal History</a><br>
+                    <a href="#razasmx" class="link"><i class="fas fa-cat"></i> Razas</a><br>
+                    <a href="#emerg" class="link"><i class="fas fa-ambulance"></i> Emergencias</a><br>
+                    <a href="" class="link"><i class="fas fa-id-card-alt"></i> Contacto</a><br>
+                </div>
+        </div>
+    </section><br>
+    <section class="blog" id="blogger">
+        <div class="blog_div" id="blog_dv">
+            <h1 class="text_blog">Animal Blog Mx </h1>
+            <img src="img/dog1.jpg" alt="perro">
+            <div class="div_p">
+                <p>El mejor amigo que un hombre pueda tener, el único, absoluto y mejor amigo que tiene el hombre en este mundo egoísta, el único que no lo va a traicionar o negar JAMAS, es su PERRO, su mascota, su mejor amigo.<br><br>Da click al boton debajo y conoce nuestro blog <br><i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="blogg">Animal Blog</button>
+            </div>
+        </div>
+    </section>
+    <section class="history" id="hist">
+        <div class="hist_div" id="hist_dv">
+            <h1 class="text_hist">Planet History</h1>
+            <canvas id=lienzo></canvas>
+            <img src="img/planet.jpg" alt="planeta" id="planet">
+            <div class="hist_p">
+                <p>La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después. Es el hogar de millones de especies, incluidos los seres humanos y actualmente el único cuerpo astronómico donde se conoce la existencia de vida. <br><br>Conoce nuestro planeta, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="history_web">Animal History</button>
+            </div>
+        </div>
+    </section>
+    <section class="razas" id="razasmx">
+        <div class="raz_div" id="raz_dv">
+            <h1 class="text_raz">Razas Mx</h1>
+            <img src="img/tigre.jpg" alt="tigre">
+            <div class="raz_p">
+                <p>Los félidos o comúnmente llamados felinos (Felidae) son una familia de mamíferos placentarios del orden Carnivora. Poseen un cuerpo esbelto, oído agudo, hocico corto y excelente vista. <br><br>Mas del tema, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="cat">Razas felinas</button>
+            </div>
+            <img src="img/labrador.jpg" alt="perro">
+            <div class="raz_p">
+                <p>Una raza de perro o raza canina es un grupo de perros que tienen características muy similares o casi idénticas en su aspecto o comportamiento o generalmente en ambos, sobre todo porque vienen de un sistema selecto de antepasados que tenían las mismas características. <br><br>Mas del tema, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="dog">Razas caninas</button>
+            </div>
+            <img src="img/perico.jpg" alt="pericos">
+            <div class="raz_p">
+                <p>Las aves son animales vertebrados, de sangre caliente, que caminan, saltan o se mantienen solo sobre las extremidades posteriores, mientras que las extremidades anteriores han evolucionado hasta convertirse en alas. <br><br>Mas del tema, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="bird">Loros y subespecies</button>
+            </div>
+            <img src="img/tiburon.jpg" alt="tiburon">
+            <div class="raz_p">
+                <p>Los mamíferos (Mammalia) son una clase de animales vertebrados amniotas homeotermos (de sangre caliente) que poseen glándulas mamarias productoras de leche con las que alimentan a las crías. <br><br>Mas del tema, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="mamm">Mamiferos</button>
+            </div>
+            <img src="img/serpiente.jpg" alt="serpiente">
+            <div class="raz_p">
+                <p>Los reptiles (Reptilia, del latín reptĭlis -que se arrastra-), son un grupo de animales vertebrados amniotas provistos de escamas epidérmicas de queratina. <br><br>Mas del tema, aquí debajo <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+                <button type="button" id="reptile">Reptiles y anfibios</button>
+            </div>
+        </div>
+    </section>
+    <section class="emergency" id="emerg">
+        <div class="emer_div" id="emer_dv">
+            <h1 class="text_emer">Emergencias</h1>
+            <img src="img/ambulance.jpg" alt="planeta">
+            <div class="emer_p">
+                <p>Urgencias, <br>asistencia medica via terrestre y aerea.</p>
+                <form action="emergency.php" method="POST">
+                <label for="mail">Correo: </label>
+                <input type="email" class="mail" name="email" required><br>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" class="telefono" name="telefono" required><br>
+                <label for="texto">Mensaje: </label>
+                <textarea name="texto" id="text" name="texto" required></textarea>
+            </form><br>
+            <button type="send" name="envio">Enviar peticion</button>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="cont">
+        <div class="cont_div" id="cont_dv">
+            <h1 class="cont_blog">Contacto </h1>
+            <address class="cont_p">
+                <p>Phone: 5512345678<br>Mail: mail@mail.com <br><br> By Maligno.Snow<br><br>
+                    <i class="fab fa-github-square" id="git"></i>
+                    <i class="fab fa-facebook-square" id="face"></i>
+                    <i class="fab fa-telegram" id="tel"></i>
+                    <i class="fab fa-whatsapp-square" id="wha"></i>
+                    <i class="fab fa-twitter-square" id="twi"></i>
+                   
+                </p>
+            </address>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
